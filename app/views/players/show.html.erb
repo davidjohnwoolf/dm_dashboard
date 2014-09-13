@@ -1,0 +1,7 @@
+<h1><%= @player.name %></h1>
+
+<p><%= @player.description %></p>
+
+<%= link_to 'Edit Player', edit_player_path(@player.id) %>
+<br>
+<%= link_to "Delete Player", player_path(@player.id), method: :delete, data: {confirm: "Are you sure?"} %>
