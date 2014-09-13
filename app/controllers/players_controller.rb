@@ -38,13 +38,13 @@ class PlayersController < ApplicationController
 
   def destroy
     @player.destroy
-    redirect_to characters_url
+    redirect_to players_url
   end
 
   private
 
   def player_params
-    require(player).permit(:name, :description)
+    params.require(:player).permit(:name, :description)
   end
 
   def find_player
