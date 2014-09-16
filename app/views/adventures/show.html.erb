@@ -2,8 +2,29 @@
 
 <p><%= @adventure.description %></p>
 
-<h4>Completed:</h4>
-<p><%= @adventure.completed %></p>
+<p>Completed: <%= @adventure.completed %></p>
+
+<h2>Encounters</h2>
+
+<% @adventure.encounters.each do |encounter| %>
+  <h4>Encounter</h4>
+  <p>
+    <%= encounter.title %>
+  </p>
+  <p>
+    <%= encounter.description %>
+  </p>
+  <p>
+    Reward: <%= encounter.reward %>
+  </p>
+  <p>
+    Experience: <%= encounter.experience %>
+  </p>
+  <p>
+    Completed: <%= encounter.completed %>
+  </p>
+
+<% end %>
 
 <%= link_to 'Edit Adventure', edit_adventure_path(@adventure.id) %>
 <br>
