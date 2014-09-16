@@ -1,0 +1,22 @@
+<%= form_for @adventure do |f| %>
+
+  <div>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </div>
+
+  <div>
+    <%= f.label :description %>
+    <%= f.text_area :description %>
+  </div>
+
+  <div>
+    <%= f.label :completed %>
+    <%= f.check_box :completed %>
+  </div>
+
+  <div>
+    <%= f.submit 'Submit' %>
+  </div>
+
+<% end %>
