@@ -1,0 +1,9 @@
+<h1>Adventures</h1>
+
+<% @adventures.each do |adventure| %>
+  <% if adventure.user_id == current_user.id %>
+    <div>
+      <%= link_to adventure.title, adventure_path(adventure.id) %>
+    </div>
+  <% end %>
+<% end %>

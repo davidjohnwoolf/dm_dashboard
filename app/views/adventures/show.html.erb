@@ -1,0 +1,10 @@
+<h1><%= @adventure.title %></h1>
+
+<p><%= @adventure.description %></p>
+
+<h4>Completed:</h4>
+<p><%= @adventure.completed %></p>
+
+<%= link_to 'Edit Adventure', edit_adventure_path(@adventure.id) %>
+<br>
+<%= link_to "Delete Adventure", adventure_path(@adventure.id), method: :delete, data: {confirm: "Are you sure?"} %>
