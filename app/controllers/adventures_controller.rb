@@ -15,7 +15,7 @@ class AdventuresController < ApplicationController
   end
 
   def create
-    @adventure = Player.new(adventure_params)
+    @adventure = Adventure.new(adventure_params)
     @adventure.user_id = current_user.id
     if @adventure.save
       redirect_to adventures_url
