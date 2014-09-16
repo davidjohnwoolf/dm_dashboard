@@ -12,6 +12,7 @@ class AdventuresController < ApplicationController
 
   def new
     @adventure = Adventure.new
+    @adventure.encounters.build
   end
 
   def create
@@ -44,7 +45,7 @@ class AdventuresController < ApplicationController
   private
 
   def adventure_params
-    params.require(:adventure).permit(:title, :description, :completed)
+    params.require(:adventure).permit(:title, :description, :completed, encounters_attributes: [:title, :description, :reward, :experience, :completed, :id, :_destroy])
   end
 
   def find_adventure
