@@ -18,9 +18,9 @@ ActiveRecord::Schema.define(version: 20140916060712) do
 
   create_table "adventures", force: true do |t|
     t.integer  "user_id"
-    t.string   "title"
-    t.text     "description"
-    t.boolean  "completed"
+    t.string   "title",                       null: false
+    t.text     "description",                 null: false
+    t.boolean  "completed",   default: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -42,8 +42,8 @@ ActiveRecord::Schema.define(version: 20140916060712) do
 
   create_table "players", force: true do |t|
     t.integer  "user_id"
-    t.string   "name"
-    t.text     "description"
+    t.string   "name",        null: false
+    t.text     "description", null: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
