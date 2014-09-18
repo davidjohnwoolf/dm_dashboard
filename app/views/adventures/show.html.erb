@@ -23,7 +23,16 @@
   <p>
     Completed: <%= encounter.completed %>
   </p>
+<% end %>
 
+<% @adventure.notes.each do |note| %>
+  <h4>Note</h4>
+  <p>
+    <%= note.title %>
+  </p>
+  <p>
+    <%= note.description %>
+  </p>
 <% end %>
 
 <%= link_to 'Edit Adventure', edit_adventure_path(@adventure.id) %>

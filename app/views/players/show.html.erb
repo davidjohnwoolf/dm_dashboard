@@ -2,6 +2,16 @@
 
 <p><%= @player.description %></p>
 
+<% @player.notes.each do |note| %>
+  <h4>Note</h4>
+  <p>
+    <%= note.title %>
+  </p>
+  <p>
+    <%= note.description %>
+  </p>
+<% end %>
+
 <%= link_to 'Edit Player', edit_player_path(@player.id) %>
 <br>
 <%= link_to "Delete Player", player_path(@player.id), method: :delete, data: {confirm: "Are you sure?"} %>

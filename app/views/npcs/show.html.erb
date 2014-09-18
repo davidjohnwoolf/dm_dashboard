@@ -2,6 +2,16 @@
 
 <p><%= @npc.description %></p>
 
+<% @npc.notes.each do |note| %>
+  <h4>Note</h4>
+  <p>
+    <%= note.title %>
+  </p>
+  <p>
+    <%= note.description %>
+  </p>
+<% end %>
+
 <%= link_to 'Edit NPC', edit_npc_path(@npc.id) %>
 <br>
 <%= link_to "Delete NPC", npc_path(@npc.id), method: :delete, data: {confirm: "Are you sure?"} %>

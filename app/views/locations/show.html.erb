@@ -2,6 +2,16 @@
 
 <p><%= @location.description %></p>
 
+<% @location.notes.each do |note| %>
+  <h4>Note</h4>
+  <p>
+    <%= note.title %>
+  </p>
+  <p>
+    <%= note.description %>
+  </p>
+<% end %>
+
 <%= link_to 'Edit Location', edit_location_path(@location.id) %>
 <br>
 <%= link_to "Delete Location", location_path(@location.id), method: :delete, data: {confirm: "Are you sure?"} %>
