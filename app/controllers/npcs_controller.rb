@@ -42,7 +42,7 @@ class NpcsController < ApplicationController
   private
 
   def npc_params
-    params.require(:npc).permit(:name, :description)
+    params.require(:npc).permit(:name, :description, notes_attributes: [:title, :description, :id, :_destroy])
   end
 
   def find_npc

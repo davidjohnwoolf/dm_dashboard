@@ -43,7 +43,7 @@ class AdventuresController < ApplicationController
   private
 
   def adventure_params
-    params.require(:adventure).permit(:title, :description, :completed, encounters_attributes: [:title, :description, :reward, :experience, :completed, :id, :_destroy])
+    params.require(:adventure).permit(:title, :description, :completed, encounters_attributes: [:title, :description, :reward, :experience, :completed, :id, :_destroy], notes_attributes: [:title, :description, :id, :_destroy])
   end
 
   def find_adventure

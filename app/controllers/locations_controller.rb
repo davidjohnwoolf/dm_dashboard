@@ -46,6 +46,6 @@ class LocationsController < ApplicationController
   end
 
   def location_params
-    params.require(:location).permit(:title, :description)
+    params.require(:location).permit(:title, :description, notes_attributes: [:title, :description, :id, :_destroy])
   end
 end

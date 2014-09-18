@@ -46,6 +46,6 @@ class PlayersController < ApplicationController
   end
 
   def player_params
-    params.require(:player).permit(:name, :description)
+    params.require(:player).permit(:name, :description, notes_attributes: [:title, :description, :id, :_destroy])
   end
 end
