@@ -1,4 +1,4 @@
-class NpcController < ApplicationController
+class NpcsController < ApplicationController
   before_action :authenticate_user!
   before_action :find_npc, only: [:show, :edit, :update, :destroy]
 
