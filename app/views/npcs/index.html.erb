@@ -1,0 +1,9 @@
+<h1>NPCs</h1>
+
+<% @npcs.each do |npc| %>
+  <% if npc.user_id == current_user.id %>
+    <div>
+      <%= link_to npc.name, npc_path(npc.id) %>
+    </div>
+  <% end %>
+<% end %>

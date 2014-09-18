@@ -1,0 +1,7 @@
+<h1><%= @npc.name %></h1>
+
+<p><%= @npc.description %></p>
+
+<%= link_to 'Edit NPC', edit_npc_path(@npc.id) %>
+<br>
+<%= link_to "Delete NPC", npc_path(@npc.id), method: :delete, data: {confirm: "Are you sure?"} %>
