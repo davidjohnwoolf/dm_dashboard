@@ -1,0 +1,7 @@
+<h1><%= @location.title %></h1>
+
+<p><%= @location.description %></p>
+
+<%= link_to 'Edit Location', edit_location_path(@location.id) %>
+<br>
+<%= link_to "Delete Location", location_path(@location.id), method: :delete, data: {confirm: "Are you sure?"} %>

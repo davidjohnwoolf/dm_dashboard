@@ -1,0 +1,9 @@
+<h1>Locations</h1>
+
+<% @locations.each do |location| %>
+  <% if location.user_id == current_user.id %>
+    <div>
+      <%= link_to location.title, location_path(location.id) %>
+    </div>
+  <% end %>
+<% end %>
