@@ -5,4 +5,5 @@ class Adventure < ActiveRecord::Base
   has_many :notes, as: :notable
 
   accepts_nested_attributes_for :encounters, :allow_destroy => true
+  accepts_nested_attributes_for :notes, :allow_destroy => true
 end
