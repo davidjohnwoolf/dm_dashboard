@@ -7,7 +7,6 @@ class NpcsController < ApplicationController
   end
 
   def show
-
   end
 
   def new
@@ -25,7 +24,6 @@ class NpcsController < ApplicationController
   end
 
   def edit
-
   end
 
   def update
