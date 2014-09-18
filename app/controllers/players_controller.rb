@@ -7,7 +7,6 @@ class PlayersController < ApplicationController
   end
 
   def show
-
   end
 
   def new
@@ -30,7 +29,7 @@ class PlayersController < ApplicationController
 
   def update
     if @player.update_attributes(player_params)
-      redirect_to player_path(@player.id)
+      redirect_to player_url(@player.id)
     else
       render :edit
     end
@@ -43,11 +42,11 @@ class PlayersController < ApplicationController
 
   private
 
-  def player_params
-    params.require(:player).permit(:name, :description)
-  end
-
   def find_player
     @player = Player.find(params[:id])
+  end
+
+  def player_params
+    params.require(:player).permit(:name, :description)
   end
 end
