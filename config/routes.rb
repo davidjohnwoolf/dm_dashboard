@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   resources :players
   resources :adventures
   resources :npcs
+  resources :locations
 
   root 'site#index'
 end
