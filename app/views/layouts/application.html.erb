@@ -7,28 +7,34 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+
   <header id="main-header">
-    <h1><%= link_to 'DM Dashboard', root_path %></h1>
-    <nav>
-      <ul>
-        <li><%= link_to 'Players', players_path %></li>
-        <li><%= link_to 'New Player', new_player_path %></li>
-        <li><%= link_to 'NPCs', npcs_path %></li>
-        <li><%= link_to 'New NPC', new_npc_path %></li>
-        <li><%= link_to 'Locations', locations_path %></li>
-        <li><%= link_to 'New Location', new_location_path %></li>
-        <li><%= link_to 'Adventures', adventures_path %></li>
-        <li><%= link_to 'New Adventure', new_adventure_path %></li>
-      </ul>
-    </nav>
-    <div class="clear">
+    <div class="wrap">
+      <h1><%= link_to 'DM Dashboard', root_path %></h1>
+      <nav>
+        <ul>
+          <li><%= link_to 'Players', players_path %></li>
+          <li><%= link_to 'New Player', new_player_path %></li>
+          <li><%= link_to 'NPCs', npcs_path %></li>
+          <li><%= link_to 'New NPC', new_npc_path %></li>
+          <li><%= link_to 'Locations', locations_path %></li>
+          <li><%= link_to 'New Location', new_location_path %></li>
+          <li><%= link_to 'Adventures', adventures_path %></li>
+          <li><%= link_to 'New Adventure', new_adventure_path %></li>
+        </ul>
+      </nav>
+      <div class="clear"></div>
     </div>
   </header>
 
+  <div class="wrap">
+    <section>
+      <%= yield %>
+    </section>
+  </div>
+
   <p class="notice"><%= notice %></p>
   <p class="alert"><%= alert %></p>
-
-<%= yield %>
 
 </body>
 </html>

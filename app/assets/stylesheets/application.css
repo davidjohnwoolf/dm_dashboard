@@ -34,9 +34,13 @@ body {
 
 /* Layout Styles */
 
+.wrap {
+  width: 80%;
+  margin: 0 auto;
+}
+
 #main-header {
   margin: 0;
-  padding: 10px;
   background-color: #222;
 }
 
