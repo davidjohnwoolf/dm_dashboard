@@ -14,6 +14,8 @@
  *= require_self
  */
 
+/* General Styles */
+
 * {
   margin: 0;
   padding: 0;
@@ -30,40 +32,44 @@ body {
   color: #222;
 }
 
+/* Layout Styles */
+
 #main-header {
   margin: 0;
   padding: 10px;
   background-color: #222;
 }
 
-#main-header h1 {
-  float: left;
-  color: #fff;
-  padding: 0;
-  margin: 0;
-  font-size: 1.5em;
-}
+  #main-header h1 {
+    float: left;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    font-size: 1.5em;
+  }
 
-#main-header ul {
-  list-style: none;
-  padding: 0;
-  float: right;
-  margin-top: 5px;
-}
+  #main-header a {
+    text-decoration: none;
+    color: #fff;
+  }
 
-#main-header ul li {
-  display: inline;
-  margin-left: 5px;
-}
+  #main-header a:hover {
+    color: #999;
+  }
 
-#main-header a {
-  text-decoration: none;
-  color: #fff;
-}
+  #main-header ul {
+    list-style: none;
+    padding: 0;
+    float: right;
+    margin-top: 5px;
+  }
 
-#main-header a:hover {
-  color: #999;
-}
+    #main-header ul li {
+      display: inline;
+      margin-left: 5px;
+    }
+
+/* Misc Classes */
 
 .clear {
   clear: both;
