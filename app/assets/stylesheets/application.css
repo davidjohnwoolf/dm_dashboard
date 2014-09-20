@@ -66,6 +66,17 @@ a:hover {
   color: #3f0;
 }
 
+input[type="submit"] {
+  border: none;
+  padding: 10px;
+  color: #fff;
+  background-color: #f90;
+}
+
+input[type="submit"]:hover {
+  background-color: #fc0;
+}
+
 /* Layout Styles */
 
 .wrap {
