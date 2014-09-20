@@ -32,6 +32,10 @@ body {
   color: #222;
 }
 
+h1 {
+  color: red;
+}
+
 /* Layout Styles */
 
 .wrap {
@@ -39,12 +43,12 @@ body {
   margin: 0 auto;
 }
 
-#main-header {
+.main-header {
   margin: 0;
   background-color: #222;
 }
 
-  #main-header h1 {
+  .main-header h1 {
     float: left;
     color: #fff;
     padding: 0;
@@ -52,26 +56,30 @@ body {
     font-size: 1.5em;
   }
 
-  #main-header a {
+  .main-header a {
     text-decoration: none;
     color: #fff;
   }
 
-  #main-header a:hover {
+  .main-header a:hover {
     color: #999;
   }
 
-  #main-header ul {
+  .main-header ul {
     list-style: none;
     padding: 0;
     float: right;
     margin-top: 5px;
   }
 
-    #main-header ul li {
+    .main-header ul li {
       display: inline;
       margin-left: 5px;
     }
+
+.main-content {
+  margin-top: 20px;
+}
 
 /* Misc Classes */
 
