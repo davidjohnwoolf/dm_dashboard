@@ -29,46 +29,42 @@ body {
   font-size: 1em;
   font-family: Helvetica, Arial, sans-serif;
   line-height: 1.4;
-  color: #222;
+  color: #333;
 }
 
 h1 {
-  color: #066;
   font-size: 2em;
+  margin-bottom: 20px;
 }
 
 h2 {
-  color: #066;
   font-size: 1.5em;
 }
 
 h3 {
-  color: #066;
   font-size: 1.3em;
 }
 
 h4 {
-  color: #066;
   font-size: 1.1em;
 }
 
 h5 {
-  color: #066;
   font-size: .9em;
 }
 
 h6 {
-  color: #066;
   font-size: .7em;
 }
 
 a {
-  color: #3c0;
+  color: #abc837;
   text-decoration: none;
 }
 
 a:hover {
-  color: #3f0;
+  color: #89a02c;
+  text-decoration: none;
 }
 
 input[type="submit"] {
@@ -91,25 +87,23 @@ input[type="submit"]:hover {
 
 .main-header {
   margin: 0;
-  background-color: #222;
+  background-color: #333;
 }
+
+  .main-header a:hover {
+    color: #fff;
+  }
 
   .main-header h1 {
     float: left;
-    color: #fff;
     padding: 0;
     margin: 0;
     font-size: 1.5em;
   }
 
-  .main-header a {
-    text-decoration: none;
-    color: #fff;
-  }
-
-  .main-header a:hover {
-    color: #999;
-  }
+    .main-header h1 a {
+      color: #fff;
+    }
 
   .main-header ul {
     list-style: none;
