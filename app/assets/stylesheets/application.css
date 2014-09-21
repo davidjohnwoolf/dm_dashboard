@@ -59,28 +59,32 @@ h6 {
 }
 
 a {
-  color: #abc837;
+  color: #aaa;
   text-decoration: none;
 }
 
 a:hover {
-  color: #89a02c;
+  color: #999;
   text-decoration: none;
 }
 
 input:not([type="checkbox"]), textarea {
   display: block;
+  border: 2px #ccc solid;
+  border-radius: 2px;
+  padding: 5px;
 }
 
 input[type="submit"] {
   border: none;
   padding: 10px;
   color: #fff;
-  background-color: #f90;
+  background-color: #888;
 }
 
 input[type="submit"]:hover {
-  background-color: #fc0;
+  background-color: #aaa;
+  cursor: pointer;
 }
 
 /* Layout Styles */
