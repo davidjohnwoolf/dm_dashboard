@@ -28,22 +28,29 @@
   <%= f.fields_for :encounters do |encounter_form| %>
     <div>
       <h4>Encounter</h4>
-      <%= encounter_form.link_to_remove 'Delete Encounter' %>
-      <br>
-      <%= encounter_form.label :title %>
-      <%= encounter_form.text_field :title %>
-      <br>
-      <%= encounter_form.label :description %>
-      <%= encounter_form.text_area :description %>
-      <br>
-      <%= encounter_form.label :reward %>
-      <%= encounter_form.text_field :reward %>
-      <br>
-      <%= encounter_form.label :experience %>
-      <%= encounter_form.number_field :experience %>
-      <br>
-      <%= encounter_form.check_box :completed %>
-      <%= encounter_form.label :completed %>
+      <div>
+        <%= encounter_form.link_to_remove 'Delete Encounter' %>
+      </div>
+      <div>
+        <%= encounter_form.label :title %>
+        <%= encounter_form.text_field :title %>
+      </div>
+      <div>
+        <%= encounter_form.label :description %>
+        <%= encounter_form.text_area :description %>
+      </div>
+      <div>
+        <%= encounter_form.label :reward %>
+        <%= encounter_form.text_field :reward %>
+      </div>
+      <div>
+        <%= encounter_form.label :experience %>
+        <%= encounter_form.number_field :experience %>
+      </div>
+      <div>
+        <%= encounter_form.check_box :completed %>
+        <%= encounter_form.label :completed %>
+      </div>
     </div>
   <% end %>
   <br>
