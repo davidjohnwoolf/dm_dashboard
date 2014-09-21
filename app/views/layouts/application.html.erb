@@ -8,8 +8,8 @@
 </head>
 <body>
 
-  <header class="main-header">
-    <div class="wrap">
+  <div class="header-wrap">
+    <header>
       <h1><%= link_to 'DM Dashboard', root_path %></h1>
       <nav>
         <ul>
@@ -24,16 +24,24 @@
         </ul>
       </nav>
       <div class="clear"></div>
-    </div>
-  </header>
+    </header>
+  </div>
 
   <p class="notice"><%= notice %></p>
   <p class="alert"><%= alert %></p>
 
-  <div class="wrap">
-    <section class="main-content">
+  <div class="main-wrap">
+    <section>
       <%= yield %>
     </section>
+  </div>
+
+  <div class="footer-wrap">
+    <footer>
+      <p>
+        Footer text
+      </p>
+    </footer>
   </div>
 
 </body>
