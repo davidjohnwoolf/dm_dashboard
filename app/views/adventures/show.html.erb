@@ -7,8 +7,8 @@
 <h2>Encounters</h2>
 
 <% @adventure.encounters.each do |encounter| %>
-  <h4 class="dropdown-button"><%= encounter.title %></h4>
-  <div class="dropdown">
+  <h4><%= encounter.title %></h4>
+  <div>
     <p>
       <%= encounter.description %>
     </p>
