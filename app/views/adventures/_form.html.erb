@@ -19,8 +19,8 @@
   </div>
 
   <div>
-    <%= f.label :completed %>
     <%= f.check_box :completed %>
+    <%= f.label :completed %>
   </div>
 
   <h2>Encounters</h2>
@@ -42,8 +42,8 @@
       <%= encounter_form.label :experience %>
       <%= encounter_form.number_field :experience %>
       <br>
-      <%= encounter_form.label :completed %>
       <%= encounter_form.check_box :completed %>
+      <%= encounter_form.label :completed %>
     </div>
   <% end %>
   <br>
