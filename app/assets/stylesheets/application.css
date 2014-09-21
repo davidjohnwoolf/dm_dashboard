@@ -48,7 +48,7 @@ h6 {
 }
 
 a {
-  color: #aaa;
+  color: #cf3013;
   text-decoration: none;
 }
 
@@ -59,7 +59,7 @@ a:hover {
 
 input:not([type="checkbox"]), textarea {
   display: block;
-  border: 2px #ccc solid;
+  border: 1px #ccc solid;
   border-radius: 2px;
   padding: 5px;
 }
@@ -80,6 +80,7 @@ input[type="submit"]:hover {
 label {
   display: inline-block;
   margin-top: 5px;
+  color: #777;
 }
 
 /* Layout Styles */
