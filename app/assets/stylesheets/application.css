@@ -68,7 +68,7 @@ a:hover {
   text-decoration: none;
 }
 
-input, textarea {
+input:not([type="checkbox"]), textarea {
   display: block;
 }
 
