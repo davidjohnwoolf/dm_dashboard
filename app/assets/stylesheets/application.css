@@ -36,6 +36,7 @@ h3 {
 }
 
 h4 {
+  margin-top: 10px;
   font-size: 1.1em;
 }
 
@@ -142,4 +143,8 @@ label {
 
 .clear {
   clear: both;
+}
+
+.dropdown {
+  display: none;
 }
