@@ -7,28 +7,18 @@
 <h2>Encounters</h2>
 
 <% @adventure.encounters.each do |encounter| %>
-  <h4><%= encounter.title %></h4>
-  <div>
-    <p>
-      <%= encounter.description %>
-    </p>
-    <p>
-      Reward: <%= encounter.reward %>
-    </p>
-    <p>
-      Experience: <%= encounter.experience %>
-    </p>
-    <p>
-      Completed: <%= encounter.completed %>
-    </p>
-  </div>
+  <h4 class="encounter-header"><%= encounter.title %></h4>
+  <ul class="encounter">
+    <li><%= encounter.description %></li>
+    <li>Reward: <%= encounter.reward %></li>
+    <li>Experience: <%= encounter.experience %></li>
+    <li>Completed: <%= encounter.completed %></li>
+  </ul>
 <% end %>
 
+<h2>Notes</h2>
 <% @adventure.notes.each do |note| %>
-  <h4>Note</h4>
-  <p>
-    <%= note.title %>
-  </p>
+  <h4><%= note.title %></h4>
   <p>
     <%= note.description %>
   </p>
