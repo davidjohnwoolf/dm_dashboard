@@ -49,7 +49,7 @@ h6 {
 }
 
 a {
-  color: #cf3013;
+  color: #bbb;
   text-decoration: none;
 }
 
@@ -143,6 +143,14 @@ label {
 
 .clear {
   clear: both;
+}
+
+.green {
+  color: green;
+}
+
+.red {
+  color: red;
 }
 
 /* Adventure Show Page */
