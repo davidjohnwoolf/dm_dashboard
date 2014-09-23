@@ -2,11 +2,9 @@
 
 <p><%= @npc.description %></p>
 
+<h2>Notes</h2>
 <% @npc.notes.each do |note| %>
-  <h4>Note</h4>
-  <p>
-    <%= note.title %>
-  </p>
+  <h4><%= note.title %></h4>
   <p>
     <%= note.description %>
   </p>
