@@ -145,6 +145,16 @@ label {
   clear: both;
 }
 
+/* Adventure Show Page */
+
+.encounter-header {
+  background-color: #999;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  padding: 5px;
+}
 .encounter {
   display: none;
+  list-style-type: none;
 }
