@@ -17,7 +17,8 @@
 //= require_tree .
 
 $(document).ready(function() {
-  $('h4.encounter-header').click(function() {
+  $('.encounter').hide();
+  $('h4.encounter-header').on('click', function() {
     $(this).next().toggle();
   });
 })
