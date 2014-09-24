@@ -1,2 +1,42 @@
 <h1>DM Dashboard</h1>
 <p>Welcome to the DM Dashboard, an online application that helps DM's of all types manage their games.</p>
+<section class="dash">
+  <h2>Players</h2>
+  <% @players.each do |player| %>
+    <% if player.user_id == current_user.id %>
+      <div>
+        <%= link_to player.name, player_path(player.id) %>
+      </div>
+    <% end %>
+  <% end %>
+</section>
+<section class="dash">
+  <h2>Adventures</h2>
+  <% @adventures.each do |adventure| %>
+    <% if adventure.user_id == current_user.id %>
+      <div>
+        <%= link_to adventure.title, adventure_path(adventure.id) %>
+      </div>
+    <% end %>
+  <% end %>
+</section>
+<section class="dash">
+  <h2>Locations</h2>
+  <% @locations.each do |location| %>
+    <% if location.user_id == current_user.id %>
+      <div>
+        <%= link_to location.title, location_path(location.id) %>
+      </div>
+    <% end %>
+  <% end %>
+</section>
+<section class="dash">
+  <h2>NPCs</h2>
+  <% @npcs.each do |npc| %>
+    <% if npc.user_id == current_user.id %>
+      <div>
+        <%= link_to npc.name, npc_path(npc.id) %>
+      </div>
+    <% end %>
+  <% end %>
+</section>
