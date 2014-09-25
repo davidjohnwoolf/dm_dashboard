@@ -23,7 +23,7 @@
   <%= f.fields_for :notes do |notes_form| %>
     <div>
       <h4>Note</h4>
-      <%= notes_form.link_to_remove '- Delete Note', class: 'red' %>
+      <%= notes_form.link_to_remove 'Delete Note', class: 'red' %>
       <br>
       <%= notes_form.label :title %>
       <%= notes_form.text_field :title %>
@@ -33,7 +33,7 @@
     </div>
   <% end %>
   <br>
-  <div><%= f.link_to_add "+ Add a note", :notes, class: 'green' %></div>
+  <div><%= f.link_to_add "Add a note", :notes, class: 'green' %></div>
   <br>
 
   <div>
