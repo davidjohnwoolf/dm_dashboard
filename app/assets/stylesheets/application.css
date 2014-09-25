@@ -168,12 +168,11 @@ label {
 
 /* Home Page Styles */
 
-section[class$="-dash"] {
+.dashboard {
   padding: 0 1% 5px 1%;
   width: 47%;
   margin-bottom: 10px;
   border: 1px #999 solid;
-  min-height: 150px;
 }
 
 .players-dash {
