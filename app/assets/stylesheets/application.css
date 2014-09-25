@@ -165,3 +165,29 @@ label {
 .encounter {
   list-style-type: none;
 }
+
+/* Home Page Styles */
+
+section[class$="-dash"] {
+  padding: 0 1% 5px 1%;
+  width: 47%;
+  margin-bottom: 10px;
+  border: 1px #999 solid;
+  height: 150px;
+}
+
+.players-dash {
+  float: left;
+}
+
+.adventures-dash {
+  float: right;
+}
+
+.locations-dash {
+  float: left;
+}
+
+.npcs-dash {
+  float: right;
+}
