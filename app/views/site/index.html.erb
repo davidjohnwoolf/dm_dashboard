@@ -1,5 +1,5 @@
 <h1>Dashboard</h1>
-<section class="players-dash">
+<section class="players-dash dashboard">
   <h2>Players</h2>
   <% @players.each do |player| %>
     <% if player.user_id == current_user.id %>
@@ -9,7 +9,7 @@
     <% end %>
   <% end %>
 </section>
-<section class="adventures-dash">
+<section class="adventures-dash dashboard">
   <h2>Adventures</h2>
   <% @adventures.each do |adventure| %>
     <% if adventure.user_id == current_user.id %>
@@ -19,7 +19,7 @@
     <% end %>
   <% end %>
 </section>
-<section class="locations-dash">
+<section class="locations-dash dashboard">
   <h2>Locations</h2>
   <% @locations.each do |location| %>
     <% if location.user_id == current_user.id %>
@@ -29,7 +29,7 @@
     <% end %>
   <% end %>
 </section>
-<section class="npcs-dash">
+<section class="npcs-dash dashboard">
   <h2>NPCs</h2>
   <% @npcs.each do |npc| %>
     <% if npc.user_id == current_user.id %>
