@@ -95,8 +95,12 @@ label {
   background-color: #333;
 }
 
+  .header-wrap a {
+    color: #fff
+  }
+
   .header-wrap a:hover {
-    color: #fff;
+    color: #ccc;
   }
 
   .header-wrap h1 {
