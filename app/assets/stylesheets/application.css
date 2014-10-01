@@ -116,6 +116,10 @@ label {
       color: #fff;
     }
 
+    .header-wrap h1 a:hover {
+      color: #fff;
+    }
+
   .header-wrap ul {
     list-style: none;
     padding: 0;
@@ -146,20 +150,6 @@ label {
     padding: 10px 0;
   }
 
-/* Misc Classes */
-
-.clear {
-  clear: both;
-}
-
-.green {
-  color: #00b800;
-}
-
-.red {
-  color: #f00;
-}
-
 /* Adventure Show Page */
 
 .encounter-header {
@@ -175,25 +165,52 @@ label {
 
 /* Home Page Styles */
 
+
+.dash-menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+  .dash-menu li {
+    display: inline;
+    padding: 10px;
+    background-color: #999;
+    border-top: 1px #555 solid;
+    border-left: 1px #555 solid;
+    border-right: 1px #555 solid;
+    cursor: pointer;
+  }
+
+  .dash-menu li.current {
+    background-color: #fff;
+  }
+
 .dashboard {
   padding: 0 1% 5px 1%;
   width: 47%;
-  margin-bottom: 15px;
+  margin: 7px 0 15px 0;
   border: 1px #999 solid;
-}
-
-.players-dash {
   float: left;
 }
 
-.adventures-dash {
-  float: right;
+.dash-menu ul li.players {
+  background-color: #fff;
 }
 
-.locations-dash {
-  float: left;
+/* Misc Classes */
+
+.clear {
+  clear: both;
 }
 
-.npcs-dash {
-  float: right;
+.green {
+  color: #00b800;
+}
+
+.red {
+  color: #f00;
+}
+
+.white {
+  color: #fff;
 }
