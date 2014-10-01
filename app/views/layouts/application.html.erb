@@ -13,14 +13,21 @@
       <h1><%= link_to 'DM Dashboard', root_path %></h1>
       <nav>
         <ul>
-          <li><%= link_to 'Players', players_path %></li>
-          <li><%= link_to 'New Player', new_player_path %></li>
-          <li><%= link_to 'NPCs', npcs_path %></li>
-          <li><%= link_to 'New NPC', new_npc_path %></li>
-          <li><%= link_to 'Locations', locations_path %></li>
-          <li><%= link_to 'New Location', new_location_path %></li>
-          <li><%= link_to 'Adventures', adventures_path %></li>
-          <li><%= link_to 'New Adventure', new_adventure_path %></li>
+          <% if user_signed_in? %>
+            <li><%= link_to 'Players', players_path %></li>
+            <li><%= link_to 'New Player', new_player_path %></li>
+            <li><%= link_to 'NPCs', npcs_path %></li>
+            <li><%= link_to 'New NPC', new_npc_path %></li>
+            <li><%= link_to 'Locations', locations_path %></li>
+            <li><%= link_to 'New Location', new_location_path %></li>
+            <li><%= link_to 'Adventures', adventures_path %></li>
+            <li class="white">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+            <li><%= link_to 'Edit Account', edit_user_registration_path %></li>
+            <li><%= link_to 'Sign Out', destroy_user_session_path, method: :delete %></li>
+          <% else %>
+            <li><%= link_to 'Sign Up', new_user_registration_path %></li>
+            <li><%= link_to 'Sign In', new_user_session_path %></li>
+          <% end %>
         </ul>
       </nav>
       <div class="clear"></div>
